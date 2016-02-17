@@ -12,7 +12,11 @@ window_types <- function(i_start, win_size, data) {
 }
 
 
-mattr <- function(x, win_size) {
+mattr <- function(x, win_size, full.pass = FALSE) {
+  if (full.pass) {
+    x <- c(x, x[1:(win_size - 1)])
+  }
+
   n_win <- length(x) - win_size + 1
 
   types <- vapply(seq_len(n_win), window_types, integer(1),
