@@ -1,4 +1,4 @@
-# An alternative implementation of MATTR algorithm in R
+# An alternative implementation of the MATTR algorithm in R
 # author: Shaoyun YU <eric.rongmu@gmail.com>
 # ref: Covington & Mcfall (2010) Cutting the Gordian Knot: The Moving-Average Type-Token Ratio
 # usage: mattr(vector_of_tokens, window_size)
